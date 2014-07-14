@@ -163,7 +163,6 @@ function add_background_per_page(){
 	global $post;
 	
 	$data = get_data($post->ID);
-  d($data);
 	
 	if($data['src'] == ''){
 			
@@ -210,7 +209,6 @@ function add_background_per_page(){
 	$fade = $data['fade'];
 	$fade_height = $data['fade_height'];
 	$bg_size = $data['background_size'];
-	d($data);
 	if($fade == 'yes'){ 
 	
 		$top = $src_height - $fade_height; ?>
